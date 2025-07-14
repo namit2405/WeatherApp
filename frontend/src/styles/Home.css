@@ -1,0 +1,129 @@
+.weather-app {
+  min-height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.current-weather {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+
+.temp {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.forecast-section {
+  text-align: center;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body{
+    margin: 0;
+    display: contents;
+}
+
+.suggestion-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestion-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-list li:hover {
+  background: #f0f0f0;
+}
+
+.map-section {
+  margin-top: 30px;
+  text-align: center;
+}
+.iframe-wrapper {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: -64px; /* Shift the iframe up to hide the navbar */
+  left: 0;
+}
+.forecast-detail-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  color: black;
+}

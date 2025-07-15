@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import countries from "i18n-iso-countries";
 import enLocale from "i18n-iso-countries/langs/en.json";
 import api from "../axios";
-import "../styles/home.css";
+import "../styles/Home.css";
 
 // Import your weather background images
 import clear from "../assets/sunny.jpg";

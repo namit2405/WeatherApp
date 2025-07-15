@@ -128,6 +128,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "https://weather.namits.shop",
-    "www.weather.namits.shop",
+    "https://www.weather.namits.shop",
     "http://localhost:5173",
 ]
